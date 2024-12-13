@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1728738872/Screenshot_2024-10-12_184307-removebg-preview_eqazu1.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Web</title>
+</head>
+<body>
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    
+    <p>Loading...</p>
+  </div>
+  <main class="app" style="display: none;">
+    <div class="search-box">
+      <input type="text" id="searchCity" placeholder="Enter city name" />
+      <button onclick="getWeatherByCity()">Search</button>
+    </div><br></br>
+    <div class="gap", id="location">
+      <h1 id="cityName"></h1>
+      <p id="stateCountryName"></p>
+    
+      <p id="date"></p>
+      <p id="coordinates"></p>
+
+    </div>
+
+
+    <div class="icon-container">
+      <img id="icon" alt="Weather icon">
+    </div>
+
+    <div class="gap">
+      <h2 id="description"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="precipitation"></p>
+      <p id="aqi"></p>
+    </div>
+    
+    <div id="timezone"></div>
+  </main>
+
+  <footer>
+    <p style="font-size: 8px;">
+      <a href="https://www.linkedin.com/in/kartkp/" target="_blank" style="color: white; text-decoration: none;">
+        © 2024 Kartikey Pandey.
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>
